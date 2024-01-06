@@ -94,4 +94,6 @@ app.post('/' , (req,res)=>{
   res.redirect('/') ;
 } )
 
-app.listen(3000);
+const PORT = process.env.PORT ;
+
+app.listen(PORT);
