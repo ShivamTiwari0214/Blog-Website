@@ -18,6 +18,8 @@ let Data = [
   },
 ];
 app.set("view engine", "ejs");
+app.set('views', 'view');
+
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
